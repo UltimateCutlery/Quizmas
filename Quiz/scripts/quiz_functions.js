@@ -17,6 +17,7 @@ function buildQuiz() {   // this bit displays qs or results
         TakeAns()
     } else {
         showresults()
+        
     }
 }
 
@@ -33,9 +34,9 @@ function TakeAns(){ // this bit registers when an answer is clicked. You only ge
             button.addEventListener("click", clickbutton);
 
             if(button.innerHTML==correctvalue) {//if the right answer is pressed then the score gets increased 
+                
                 button.removeEventListener("click", takescore);
                 button.addEventListener("click", takescore);
-                    
         }
             
     }
@@ -49,17 +50,21 @@ function clickbutton(){ //when a button is pressed
 }
 
 function takescore(){ 
+    if(counter < Questions.length){
     score += 1; 
     console.log( "score increased by 1");
+}
 }
 
 //this displays the score after the test - Could definitely be improved with a popup or something
 
 function showresults(){
+    
     document.querySelector(".question").innerHTML = "You Scored " + score + " Out Of "+ Questions.length/6+ "!"; 
     document.getElementById('a').innerHTML = "";
     document.getElementById('b').innerHTML = "";
     document.getElementById('c').innerHTML ="";
     document.getElementById('d').innerHTML = "";
+
 
 }

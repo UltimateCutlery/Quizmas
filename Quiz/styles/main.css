@@ -3,8 +3,9 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: whitesmoke;
+    background: rgb(13, 58, 59);
     box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 main{
@@ -18,14 +19,16 @@ main{
 
 main .question{
     width: 100%;
-    border: 1px solid dimgray;
+    border: 3px solid dimgray;
+    background: rgb(13, 58, 59);
     border-radius: 2px;
-    height: 46px;
+    height: 90px;
     text-align: center;
     line-height: 40px;
     font-size: 30px;
+    color: white;
     padding: 3px 10px;
-    font-family: Avenir;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     box-sizing: border-box;
 }
 
@@ -36,7 +39,7 @@ main .buttons{
     grid-template-areas:
         ". ."
         ". .";
-    height: calc(100% - 75px);
+    height: calc(100% - 110px);
     grid-gap: 15px;
     margin-top: 30px;
 }
@@ -44,6 +47,12 @@ main .buttons{
 main .buttons button{
     border-radius: 2px;
     background: transparent;
+    border-radius: 2px;
+    border-color: hotpink;
+    background: rgb(62, 173, 175);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14pt;
+    color: rgb(33, 56, 56);
 }
 
 main .buttons button:active{
